@@ -1,0 +1,28 @@
+{
+  "appName": "Fidegt-Spinner",
+  "appLocation": {
+    "local": "../"
+  },
+  "meteorSettingsLocation": "../settings.json",
+  "meteorSettingsInRepo": false,
+  "prebuildScript": "",
+  "meteorBuildFlags": "--architecture os.linux.x86_64",
+  "env": {
+    "ROOT_URL": "http://52.211.2.126",
+    "PORT": 3000,
+    "MONGO_URL": "mongodb://fidgetspinner:f1dget$pinner@ds129342.mlab.com:29342/fidget-spinner"
+  },
+  "server": {
+    "host": "52.211.2.126",
+    "username": "root",
+    "deploymentDir": "/opt/pm2-meteor",
+    "loadProfile": "",
+    "nvm": {
+      "bin": "~/.nvm/nvm.sh",
+      "use": "4.7.2"
+    },
+    "exec_mode": "cluster_mode",
+    "instances": "1",
+    "pem": "FidgetSpinner.pem"
+  }
+}

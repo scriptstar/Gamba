@@ -1,0 +1,95 @@
+{
+  "apps": [
+    {
+      "name": "Fidegt-Spinner",
+      "env": {
+        "ROOT_URL": "http://52.211.2.126",
+        "PORT": 3000,
+        "MONGO_URL": "mongodb://fidgetspinner:f1dget$pinner@ds129342.mlab.com:29342/fidget-spinner",
+        "METEOR_SETTINGS": {
+          "public": {
+            "title": "Fidget Spinner King",
+            "tagline": "showcase your spins produly!",
+            "logoUrl": "http://placekitten.com/250/80",
+            "logoHeight": "80",
+            "logoWidth": "250",
+            "faviconUrl": "/favicon.ico",
+            "requirePostsApproval": false,
+            "requireViewInvite": false,
+            "requirePostInvite": false,
+            "enableNewsletter": true,
+            "autoSubscribe": false,
+            "emailNotifications": true,
+            "postInterval": 20,
+            "RSSLinksPointTo": "link",
+            "commentInterval": 20,
+            "maxPostsPerDay": 10,
+            "startInvitesCount": 5,
+            "postsPerPage": 10,
+            "language": "en",
+            "locale": "en",
+            "twitterAccount": "foo",
+            "facebookPage": "http://facebook.com/foo",
+            "googleAnalyticsId": "123foo",
+            "useSegment": false,
+            "segmentWriteKey": "456bar"
+          },
+          "defaultEmail": "hello@world.com",
+          "mailUrl": "smtp://postmaster%40foo.mailgun.org:foo123@smtp.mailgun.org:587/",
+          "scoreUpdateInterval": "30",
+          "embedlyKey": "123foo",
+          "mailChimpAPIKey": "123foo",
+          "mailChimpListId": "123foo",
+          "newsletterFrequency": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "newsletterTime": "14:20",
+          "newsletterExcerptLength": 20,
+          "postExcerptLength": 30,
+          "categories": [
+            {
+              "name": "Test Category 1",
+              "description": "The first test category",
+              "order": 4,
+              "slug": "testcat1"
+            },
+            {
+              "name": "Test Category 2",
+              "description": "The second test category",
+              "order": 7,
+              "slug": "testcat2"
+            },
+            {
+              "name": "Test Category 3",
+              "description": "The third test category",
+              "order": 10,
+              "slug": "testcat3"
+            }
+          ],
+          "oAuth": {
+            "twitter": {
+              "consumerKey": "foo",
+              "secret": "bar"
+            },
+            "facebook": {
+              "appId": "foo",
+              "secret": "bar"
+            }
+          },
+          "googlemaps": {
+            "apiKey": "123foo"
+          }
+        }
+      },
+      "script": "/opt/pm2-meteor/Fidegt-Spinner/bundle/main.js",
+      "exec_mode": "cluster_mode",
+      "instances": "1"
+    }
+  ]
+}
